@@ -1,6 +1,6 @@
 ## UG4 Honours Project RTS Game Prototype Experiment
 
-This is a rudimentary prototype featuring few real-time strategy (RTS) aspects. The prototype is inteded to aid for the study on peer-to-peer massively-multiplayer-online real-time-strategy gaes.
+This is a rudimentary prototype featuring few real-time strategy (RTS) aspects. The prototype is inteded to aid for the study on peer-to-peer massively-multiplayer-online real-time-strategy games.
 
 ## Setup
 
