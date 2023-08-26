@@ -6,35 +6,10 @@ This is a rudimentary prototype featuring few real-time strategy (RTS) aspects. 
 
 This project requires some external software to be installed in the system.
 
-The following table summarizes what external software is needed.
+The following list summarizes what external software is needed and how to install it the MacOS or a Debian-based distribution like Ubuntu.
 
-<table>
-    <tr>
-        <th rowspan="2">Name</th>
-        <th rowspan="2">Description</th>
-        <th colspan="2">Installation</th>
-    </tr>
-    <tr>
-        <th>MacOS</th>
-        <th>Debian/Ubuntu</th>
-    </tr>
-    <tr>
-        <td>
-            <a href="https://brew.sh">Homebrew (<code>brew</code>)</a>
-        </td>
-        <td>
-            <b>(Only needed in MacOS)</b>
-            Package manager needed for installing other necessary software.
-        </td>
-        <td>
-            <pre>$&nbsp;HOST=raw.githubusercontent.com<br>$&nbsp;PATH=Homebrew/install/HEAD/install.sh<br>$&nbsp;CURL="curl&nbsp;-fsSL&nbsp;https://$HOST/$PATH"<br>$&nbsp;/bin/bash&nbsp;-c&nbsp;"$($CURL)"</pre>
-        </td>
-        <td>Not&nbsp;necessary.</td>
-    </tr>
-    <tr>
-        <td><a href="https://www.libsdl.org/">Simple DirectMedia Laer (SDL)</a></td>
-        <td>Cross-platform library for input and graphics.
-        <td><code>$&nbsp;brew&nbsp;install&nbsp;sdl2</code></td>
-        <td><code>#&nbsp;apt&nbsp;install&nbsp;libsdl2&#8209;dev</code></td>
-    </tr>
-</table>
+* [Homebrew (`brew`)](https://brew.sh): **(Only needed in MacOS)** Package manager needed for installing other necessary software.
+    * **MacOS**: &emsp;`$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+* [Simple DirectMedia Layer (SDL)](https://www.libsdl.org/): Cross-platform library for input and graphics.
+    * **MacOS**: &emsp;`$ brew install sdl2`
+    * **Debian**: &emsp;`# apt install libsdl2`
