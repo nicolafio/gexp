@@ -1,12 +1,12 @@
 ## UG4 Honours Project RTS Game Prototype Experiment
 
-This is a rudimentary prototype featuring few real-time strategy (RTS) aspects. The prototype is inteded to aid for the study on peer-to-peer massively-multiplayer-online real-time-strategy games.
+This is a rudimentary prototype featuring few real-time strategy (RTS) aspects. The prototype is inteded to aid for the study on peer-to-peer massively-multiplayer-online real-time-strategy games ([P2P](https://en.wikipedia.org/wiki/Peer-to-peer) [MMORTS](https://en.wikipedia.org/wiki/Massively_multiplayer_online_real-time_strategy_game)).
 
 ## Setup
 
 This project requires some external software to be installed in the system.
 
-The following list summarizes what external software is needed and how to install it the MacOS or a Debian-based distribution like Ubuntu.
+The following list summarizes what external software is needed and how to install it in the MacOS or a Debian-based distribution like Ubuntu.
 
 * [Homebrew (`brew`)](https://brew.sh): **(Only needed in MacOS)** Package manager needed for installing other necessary software.
     * **MacOS**: &emsp;`$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
