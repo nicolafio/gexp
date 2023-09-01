@@ -1,6 +1,6 @@
 <center>
 
-# <small><small>Requirements Document for:</small></small><br> Honours Project Game Experiment
+# <small><small>Design Document for:</small></small><br> Honours Project Game Experiment
 
 ### A Multiplayer Real-Time Strategy Prototype
 
