@@ -13,12 +13,18 @@ The following list summarizes what external software is needed and how to instal
 * [Simple DirectMedia Layer (SDL)](https://www.libsdl.org/): Cross-platform library for input and graphics.
     * **MacOS**: &emsp;`$ brew install sdl2`
     * **Debian**: &emsp;`# apt install libsdl2`
+* [Go](https://go.dev/): Compiler for the Go language:
+    * **MacOS**: &emsp;`$ brew install go`
+    * **Debian**: &emsp;`# apt install golang` (Not tested)
 
 ## Code names for this project
 
 This project has two code names.
 
-The primary one is `gexp` self-descriptive and easy to remember.
+The primary is `gexp`, self-descriptive and easy to remember.
 
-The secondary is `joy2`, to mark it as a spritual successor of JOY, the 2D game engine experiment made back in high school, to remisce the relative success thanks to that project. That project's primary goal was to learn. The same will be for `joy2`.
-* SMOC is a game made on top of JOY for showcase - https://nicolaf.io/smoc
+The alternative is `joy2`, to mark it as a spritual successor of JOY, the 2D game engine experiment made back in high school ¹, to remisce the relative success of that project. That project's primary goal was to learn. The same will be for `joy2`.
+
+---
+
+¹ SMOC is a game made on top of JOY for showcase - https://nicolaf.io/smoc
