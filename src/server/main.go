@@ -1,18 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"strconv"
 )
 
 const port = 8342
 
-func hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, "hello\n")
-}
-
 func main() {
-	http.HandleFunc("/hello", hello)
+	http.HandleFunc("/signin", Signin)
+	http.HandleFunc("/welcome", Welcome)
+	http.HandleFunc("/hello", Hello)
 	http.ListenAndServe(":"+strconv.Itoa(port), nil)
 }
