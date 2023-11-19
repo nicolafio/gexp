@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "compilerPath": "/usr/bin/cc",
+            "name": "Linux",
+            "includePath": [
+                "/media/jed/Data/Git/gexp/**",
+                "/usr/include/SDL2"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/media/jed/Data/Git/gexp/**",
+                    "/media/jed/Data/Git/gexp"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
