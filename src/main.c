@@ -1,12 +1,15 @@
 #include "stdio.h"
 #include "SDL.h"
 #include "main.h"
+#include "stdbool.h"
 
 #define WINDOW_WIDTH  1280
 #define WINDOW_HEIGHT 720
+#define GAME_LOOP_MINIMUM_FRAME_TIME_MILLISECONDS 8
 
 SDL_Window   *window;
 SDL_Renderer *renderer;
+bool         quit = false;
 
 int main()
 {
@@ -14,22 +17,22 @@ int main()
 
     atexit(cleanup);
 
-    SDL_Event event;
+    SDL_Event e;
 
-    while (1)
+    while (!quit)
     {
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     	SDL_RenderClear(renderer);
 
-        while (SDL_PollEvent(&event))
+        while (!quit && SDL_PollEvent(&e))
         {
-            if (event.type == SDL_QUIT) return 0;
+            event(&e);
         }
 
         update();
 
         SDL_RenderPresent(renderer);
-        SDL_Delay(16);
+        SDL_Delay(GAME_LOOP_MINIMUM_FRAME_TIME_MILLISECONDS);
     }
 }
 
@@ -49,6 +52,17 @@ void init()
     {
         printf("Failed to open window: %s\n", SDL_GetError());
         exit(1);
+    }
+}
+
+void event(SDL_Event *e)
+{
+    int type = e->type;
+
+    if (type == SDL_QUIT)
+    {
+        quit = true;;
+        return;
     }
 }
 
