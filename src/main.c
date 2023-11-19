@@ -25,7 +25,7 @@ int main()
 
         while (SDL_PollEvent(&event))
         {
-            if (event.type == SDL_QUIT) break;
+            if (event.type == SDL_QUIT) return 0;
         }
 
         update();
@@ -33,8 +33,6 @@ int main()
         SDL_RenderPresent(renderer);
         SDL_Delay(16);
     }
-
-    return 0;
 }
 
 void init()
