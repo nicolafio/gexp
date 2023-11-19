@@ -10,8 +10,6 @@ SDL_Renderer *renderer;
 
 int main()
 {
-    printf("Wow this is crazy.");
-
     init();
 
     atexit(cleanup);
