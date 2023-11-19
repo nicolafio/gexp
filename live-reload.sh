@@ -8,7 +8,7 @@ function hash_sources() {
   for f in $(find $SOURCES_DIR -type f)
   do
     hash+=$(cat $f)
-    hash=$(echo $hash | md5 -q)
+    hash=$(echo $hash | shasum | cut -d ' ' -f1)
   done
   echo $hash
 }
