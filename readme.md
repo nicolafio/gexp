@@ -13,9 +13,6 @@ The following list summarizes what external software is needed and how to instal
 * [Simple DirectMedia Layer (SDL)](https://www.libsdl.org/): Cross-platform library for input and graphics.
     * **MacOS**: &emsp;`$ brew install sdl2`
     * **Debian**: &emsp;`# apt install libsdl2`
-* [Go](https://go.dev/): Compiler for the Go language:
-    * **MacOS**: &emsp;`$ brew install go`
-    * **Debian**: &emsp;`# apt install golang` (Not tested)
 
 ## Code names for this project
 
