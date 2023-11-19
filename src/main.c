@@ -18,7 +18,7 @@ int main()
 
     while (1)
     {
-        SDL_SetRenderDrawColor(renderer, 96, 128, 255, 255);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     	SDL_RenderClear(renderer);
 
         while (SDL_PollEvent(&event))
